@@ -45,7 +45,6 @@ public class ImageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
         notifyDataSetChanged();
     }
 
-    // 核心修改：拖拽交换数据
     public void onItemMove(int fromPosition, int toPosition) {
         // 安全检查：防止越界
         if (fromPosition < images.size() && toPosition < images.size()) {
@@ -112,7 +111,6 @@ public class ImageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
         return images.size() < MAX_COUNT ? images.size() + 1 : images.size();
     }
 
-    // ViewHolder for Images
     static class ImageViewHolder extends RecyclerView.ViewHolder {
         ImageView ivThumb;
         ImageView btnDelete;
@@ -126,7 +124,6 @@ public class ImageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
         }
     }
 
-    // ViewHolder for Add Button
     static class AddViewHolder extends RecyclerView.ViewHolder {
         ImageView ivThumb;
         ImageView btnDelete;
