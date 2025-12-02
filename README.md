@@ -5,7 +5,7 @@
 
 📱 功能演示
 演示视频：
-https://bruh-clips.com/clips/69c791f1
+https://bruh-clips.com/clips/589a654b
 
 1. 图片管理
 
